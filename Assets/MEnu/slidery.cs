@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 public class slidery : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class slidery : MonoBehaviour
         if (PlayerPrefs.HasKey("Volume"))
         {
             musicVolume = PlayerPrefs.GetFloat("Volume");
+            musicAudioGroup.audioMixer.SetFloat("Volume", Mathf.Log10(musicVolume) * 20);
             volumeMusicSlider.value = musicVolume;
         }
         else

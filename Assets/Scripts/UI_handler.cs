@@ -55,12 +55,18 @@ public class UI_handler : MonoBehaviour
             Time.timeScale = 1;
             opcje.gameObject.SetActive(false);
         }
+
+        
+    }
+    private void Start()
+    {
+        Opcje_wyjscie.GetComponent<Button>().onClick.AddListener(() => {
+            Time.timeScale = 1;
+            SceneManager.LoadScene("MainMenu");
+        });
         bossHealth.KoniecGry += Instance_KoniecGry;
         invaders.instance.Boss += Instance_Boss;
-        Opcje_wyjscie.GetComponent<Button>().onClick.AddListener(() =>
-        Application.Quit());
     }
-
     private void Instance_Boss(object sender, System.EventArgs e)
     {
         HP_bossa.gameObject.SetActive(true);
@@ -78,7 +84,7 @@ public class UI_handler : MonoBehaviour
         {
             Time.timeScale = 1;
             wynik.gameObject.SetActive(false);
-            Application.Quit();
+            SceneManager.LoadScene("MainMenu");
         });
     }
 

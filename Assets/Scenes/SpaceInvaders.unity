@@ -645,6 +645,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d5f31f047e175be4eae8036278777bf9, type: 3}
+    - target: {fileID: 7588231483392002658, guid: 53d543b48e3d97f47ad86ce322e6def5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 619.7662
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588231483392002658, guid: 53d543b48e3d97f47ad86ce322e6def5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 618.6388
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588231483392002658, guid: 53d543b48e3d97f47ad86ce322e6def5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.3506
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588231483392002658, guid: 53d543b48e3d97f47ad86ce322e6def5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.6277
+      objectReference: {fileID: 0}
     - target: {fileID: 8158310962085089475, guid: 53d543b48e3d97f47ad86ce322e6def5, type: 3}
       propertyPath: m_Name
       value: Dzwiek
@@ -703,7 +719,7 @@ MonoBehaviour:
   - {fileID: 1900271251186429575, guid: d1cbb1b54d4d47140a9754faf6efd6f1, type: 3}
   - {fileID: 1900271251186429575, guid: d1cbb1b54d4d47140a9754faf6efd6f1, type: 3}
   - {fileID: 1292788026841887740, guid: f11e64627c08fff409b7f0d21b602363, type: 3}
-  iloscfal: 3
+  iloscfal: 4
   ilezab: 0
   rows: 5
   cols: 11

@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class MenuHandler : MonoBehaviour
 {
     [SerializeField] private string NameScene;
-
+   /// <summary>
+   ///  sprawdzenie 
+   /// </summary>
     public Transform Nowagra_Transform;
     public Transform Opcje_Transform;
     public Transform Wyjscie_Transform;

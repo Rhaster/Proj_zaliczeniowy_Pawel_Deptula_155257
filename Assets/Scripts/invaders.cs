@@ -27,6 +27,11 @@ public class invaders : MonoBehaviour
     public float MissleAttackRate = 1;
     private void Awake()
     {
+        if(PlayerPrefs.HasKey("fale"))
+        {
+            iloscfal = PlayerPrefs.GetInt("fale", 1);
+            Debug.Log("wczytano ilosc fal = "+ iloscfal);
+        }
 
         instance = this;
         i = 1;
@@ -44,7 +49,8 @@ public class invaders : MonoBehaviour
             Vector3 rowPosition = new Vector3(Centering.x, Centering.y + (row * 2), 0);
             for (int col = 0; col < this.cols; col++)
             {
-                invader invaderr = Instantiate(this.prefabs[row], this.transform);
+
+                invader invaderr = Instantiate(this.prefabs[row%prefabs.Length], this.transform);
                 invaderr.killed += InvaderKilled;
                 Vector3 pos = rowPosition;
                 pos.x += col * 2;
